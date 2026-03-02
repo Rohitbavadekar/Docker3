@@ -13,7 +13,7 @@ pipeline {
                 sh "sudo docker volume rm V1"
                 sh "sudo chmod -R 777 /mnt/MyWorkspace"
                 sh "sudo docker volume create V1"
-                sh "sudo docker run -itdp 80:80 -v /mnt/MyWorkspace:/usr/local/apache2/htdocs/ --name Cont1 httpd"
+                sh "sudo docker run -itdp 90:80 -v /mnt/MyWorkspace:/usr/local/apache2/htdocs/ --name Cont2 httpd"
             }
         }
     }
